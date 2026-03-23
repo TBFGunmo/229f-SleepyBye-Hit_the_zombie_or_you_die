@@ -194,7 +194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2341805138252666636, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_Name
-      value: Zombie UnityModel (1)
+      value: Zombie UnityModel_2
       objectReference: {fileID: 0}
     - target: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_LocalScale.x
@@ -253,6 +253,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
+--- !u!4 &409929652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
+  m_PrefabInstance: {fileID: 1470197414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &550730321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
+  m_PrefabInstance: {fileID: 381304791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &625809515
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +697,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200265714}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1219689199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219689200}
+  m_Layer: 0
+  m_Name: Thrown_Bottle
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219689200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219689199}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0001, y: -0.0164, z: 0.0485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2860339491589383761}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1370956290
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +769,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2341805138252666636, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_Name
-      value: Zombie UnityModel
+      value: Zombie UnityModel_3
       objectReference: {fileID: 0}
     - target: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_LocalScale.x
@@ -818,6 +859,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 32818706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1680348125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
+  m_PrefabInstance: {fileID: 1806156341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1692969698
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +976,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1769551863}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &1746301747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746301748}
+  m_Layer: 0
+  m_Name: Thrown_Ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1746301748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746301747}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0001, y: -0.0164, z: 0.0067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2860339491589383761}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769551862
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +1053,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2341805138252666636, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_Name
-      value: Zombie UnityModel (2)
+      value: Zombie UnityModel _1
       objectReference: {fileID: 0}
     - target: {fileID: 3113135169235340726, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
       propertyPath: m_LocalScale.x
@@ -1147,6 +1224,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1769551863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1854811881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854811882}
+  m_Layer: 0
+  m_Name: Thrown_Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854811882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854811881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0001, y: -0.0164, z: 0.0241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2860339491589383761}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000541486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1286,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 32818706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2006884607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8234668658401451756, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+  m_PrefabInstance: {fileID: 2860339491589383760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2111829295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1405,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7586199172456398649, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8234668658401451756, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
       propertyPath: m_Name
       value: Humman UnityModel
@@ -1342,13 +1459,58 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8722552361362375766, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
       insertIndex: -1
       addedObject: {fileID: 317282289}
-    m_AddedComponents: []
+    - targetCorrespondingSourceObject: {fileID: 8722552361362375766, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1854811882}
+    - targetCorrespondingSourceObject: {fileID: 8722552361362375766, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1219689200}
+    - targetCorrespondingSourceObject: {fileID: 8722552361362375766, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1746301748}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8234668658401451756, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2860339491589383764}
   m_SourcePrefab: {fileID: 100100000, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
 --- !u!4 &2860339491589383761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8722552361362375766, guid: 80713b2c598e8014e90fe31a696eb754, type: 3}
   m_PrefabInstance: {fileID: 2860339491589383760}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2860339491589383764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006884607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d3c7715ed8b41e45b8dc57040ec959c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  lane1: {fileID: 1490205288}
+  lane2: {fileID: 1370956291}
+  lane3: {fileID: 2000541487}
+  items:
+  - {fileID: 5084171524411607739, guid: 3becc97df797308488ecb31311ef6ed6, type: 3}
+  - {fileID: 9065063263724967188, guid: 8e7ed0e1ecb721a43bf793e7e5a1442d, type: 3}
+  - {fileID: 135666475398484870, guid: 6038afe54a15a624882296570705ad10, type: 3}
+  thrownPos:
+  - {fileID: 1854811882}
+  - {fileID: 1219689200}
+  - {fileID: 1746301748}
+  pushForce: 48.3
+  thrownForce: 2
+  heightThrown: 2
+  kickForce: 8
+  spinForce: 59.6
+  curveForce: 2.7
+  zombieLanes:
+  - {fileID: 1680348125}
+  - {fileID: 550730321}
+  - {fileID: 409929652}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
