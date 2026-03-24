@@ -137,6 +137,7 @@ public class PlayerController : MonoBehaviour
 
             }
 
+            Destroy(currentOBJ, 3);
 
         }
     }
@@ -147,8 +148,6 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 velocity = currentBall.linearVelocity;
             Vector3 spin = currentBall.angularVelocity;
-
-            currentBall = currentBall;
 
             Vector3 magnusForce = curveForce * Vector3.Cross(spin, velocity);
 
