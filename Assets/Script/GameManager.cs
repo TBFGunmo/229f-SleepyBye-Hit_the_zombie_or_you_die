@@ -5,18 +5,21 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int score = 0;
-    public int targetPoint = 5;
+    //public int targetPoint = 5;
+    public float timeLeft = 30f;
+    public float timeAdd = 2f;
 
-    public int lane1Amout = 1;
-    private int lane1current = 0;
+
+    //public int lane1Amout = 1;
+   // private int lane1current = 0;
     public bool lane1Spawned = false;
 
-    public int lane2Amout = 1;
-    private int lane2current = 0;
+   // public int lane2Amout = 1;
+    //private int lane2current = 0;
     public bool lane2Spawned = false;
 
-    public int lane3Amout = 1;
-    private int lane3current = 0;
+    //public int lane3Amout = 1;
+    //private int lane3current = 0;
     public bool lane3Spawned = false;
 
     public Transform zombiePos1;
@@ -35,6 +38,8 @@ public class GameManager : MonoBehaviour
     private float lane2Time;
     private float lane3Time;
 
+    private bool gameOver = false;
+
 
     private void Awake()
     {
@@ -43,14 +48,26 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        targetPoint = lane1Amout + lane2Amout + lane3Amout;
+        //targetPoint = lane1Amout + lane2Amout + lane3Amout;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!(lane1current >= lane1Amout))
+        if (gameOver) 
         {
+            return;
+        }
+
+        timeLeft -= Time.deltaTime;
+
+        if (timeLeft <= 0) 
+        {
+            gameOver = true;
+        }
+
+        //if (!(lane1current >= lane1Amout))
+        //{
             if (!lane1Spawned && !getTime1)
             {
                 randomTimeSpawn = Random.Range(1, 3);
@@ -68,13 +85,13 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 1;
 
-                    lane1current++;
+                    //lane1current++;
                 }
             }
-        }
+        //}
 
-        if (!(lane2current >= lane2Amout))
-        {
+        //if (!(lane2current >= lane2Amout))
+        //{
             //print("ss1");
             if (!lane2Spawned && !getTime2)
             {
@@ -92,13 +109,13 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 2;
 
-                    lane2current++;
+                    //lane2current++;
                 }
             }
-        }
+        //}
 
-        if (!(lane3current >= lane3Amout))
-        {
+        //if (!(lane3current >= lane3Amout))
+        //{
             //print("ss");
             if (!lane3Spawned && !getTime3)
             {
@@ -116,13 +133,13 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 3;
 
-                    lane3current++;
+                    //lane3current++;
                 }
             }
-        }
+        //}
 
 
-        checkWin();
+        //checkWin();
 
 
 
@@ -147,15 +164,18 @@ public class GameManager : MonoBehaviour
                 lane3Spawned = false;
                 break;
         }
+
+        timeLeft += timeAdd;
+
     }
 
-    private void checkWin() 
+    /*private void checkWin() 
     {
         if (score >= targetPoint) 
         {
             Debug.Log("win");
         }
-    }
+    }*/
 
 
 }
