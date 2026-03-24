@@ -28,6 +28,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject zombiePrefab;
 
+    public GameObject[] Obstacles; // 0 wall 1 pole
+    public Transform ObstaclesPos1;
+    public Transform ObstaclesPos2;
+    public Transform ObstaclesPos3;
+
+    private GameObject obs1;
+    private GameObject obs2;
+    private GameObject obs3;
+
+
+
     private float randomTimeSpawn;
 
     private bool getTime1 = false;
@@ -85,8 +96,21 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 1;
 
-                    //lane1current++;
-                }
+                    int randomObs = Random.Range(0, 3);
+                
+                    if (randomObs != 2)
+                    {
+                        obs1 = Instantiate(Obstacles[randomObs], ObstaclesPos1.position, Quaternion.identity);
+                        obs1.name = "Obstacle_1";
+                    }
+                    else
+                    {
+                        obs1 = null;
+                    }
+
+
+                //lane1current++;
+            }
             }
         //}
 
@@ -109,8 +133,20 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 2;
 
-                    //lane2current++;
+                    int randomObs = Random.Range(0, 3);
+
+                if (randomObs != 2)
+                {
+                    obs2 = Instantiate(Obstacles[randomObs], ObstaclesPos2.position, Quaternion.identity);
+                    obs2.name = "Obstacle_2";
                 }
+                else 
+                {
+                    obs2 = null;
+                }
+
+                //lane2current++;
+            }
             }
         //}
 
@@ -133,8 +169,21 @@ public class GameManager : MonoBehaviour
                     Zombie currentZombieScript = currentZombie.GetComponent<Zombie>();
                     currentZombieScript.currentLane = 3;
 
-                    //lane3current++;
-                }
+                    int randomObs = Random.Range(0, 3);
+
+                    if (randomObs != 2)
+                    {
+                        obs3 = Instantiate(Obstacles[randomObs], ObstaclesPos3.position, Quaternion.identity);
+                        obs3.name = "Obstacle_3";
+                    }
+                    else
+                    {
+                        obs3 = null;
+                    }
+
+
+                //lane3current++;
+            }
             }
         //}
 
@@ -156,12 +205,27 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 lane1Spawned = false ;
+                if (obs1) 
+                {
+                    Destroy(obs1 );
+                }
+
                 break;
             case 2:
                 lane2Spawned = false;
+                if (obs2)
+                {
+                    Destroy(obs2);
+                }
+
                 break;
             case 3:
                 lane3Spawned = false;
+                if (obs3)
+                {
+                    Destroy(obs3);
+                }
+
                 break;
         }
 
