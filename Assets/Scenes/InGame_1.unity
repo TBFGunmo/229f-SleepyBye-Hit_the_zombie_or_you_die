@@ -183,12 +183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   score: 0
-  targetPoint: 5
-  lane1Amout: 2
+  timeLeft: 20
+  timeAdd: 1.3
   lane1Spawned: 0
-  lane2Amout: 4
   lane2Spawned: 0
-  lane3Amout: 1
   lane3Spawned: 0
   zombiePos1: {fileID: 352312783}
   zombiePos2: {fileID: 1483594200}

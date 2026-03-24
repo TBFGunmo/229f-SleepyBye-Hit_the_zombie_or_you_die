@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 
     public int score = 0;
     //public int targetPoint = 5;
-    public float timeLeft = 30f;
-    public float timeAdd = 2f;
+    public float timeLeft = 20f;
+    public float timeAdd = 1.5f;
 
 
     //public int lane1Amout = 1;
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
         if (timeLeft <= 0) 
         {
-            gameOver = true;
+            GameOver();
         }
 
         //if (!(lane1current >= lane1Amout))
@@ -176,6 +176,14 @@ public class GameManager : MonoBehaviour
             Debug.Log("win");
         }
     }*/
+
+    private void GameOver() 
+    {
+        gameOver = true;
+        Debug.Log("GameOver");
+    }
+
+    public bool IsGameOver() { return gameOver; }
 
 
 }

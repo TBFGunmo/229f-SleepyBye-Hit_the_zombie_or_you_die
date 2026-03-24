@@ -69,6 +69,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.instance.IsGameOver()) 
+        {
+            return;
+        }
+
         if (moveLeft.triggered && currentLane != 1)
         {
             currentLane = Mathf.Clamp(currentLane - 1, 1, 3);
@@ -144,6 +149,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (GameManager.instance.IsGameOver())
+        {
+            return;
+        }
+
         if (currentBall != null) 
         {
             Vector3 velocity = currentBall.linearVelocity;
