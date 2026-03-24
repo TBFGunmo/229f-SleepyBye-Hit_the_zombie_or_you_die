@@ -1,5 +1,6 @@
-using UnityEngine;
-
+﻿using UnityEngine;
+using TMPro;
+using System.Collections;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -51,6 +52,16 @@ public class GameManager : MonoBehaviour
 
     private bool gameOver = false;
 
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timeText;
+    public TextMeshProUGUI addTimeText;
+
+    public Color normalColor = Color.white;
+    public Color warningColor = Color.red;
+    public float dangerTime = 5f;
+
+    private Vector3 addTimeStartPos;
+
 
     private void Awake()
     {
@@ -60,6 +71,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         //targetPoint = lane1Amout + lane2Amout + lane3Amout;
+        addTimeStartPos = addTimeText.transform.position;
+        addTimeText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -189,7 +202,7 @@ public class GameManager : MonoBehaviour
 
 
         //checkWin();
-
+        UpdateUI();
 
 
     }
@@ -230,7 +243,7 @@ public class GameManager : MonoBehaviour
         }
 
         timeLeft += timeAdd;
-
+        ShowAddTime(timeAdd);
     }
 
     /*private void checkWin() 
@@ -249,5 +262,62 @@ public class GameManager : MonoBehaviour
 
     public bool IsGameOver() { return gameOver; }
 
+    void UpdateUI()
+    {
+        scoreText.text = "Score: " + score;
+        timeText.text = "Time: " + timeLeft.ToString("0.0");
+
+        if (timeLeft <= dangerTime)
+        {
+            float t = timeLeft / dangerTime; // 1 → 0
+            timeText.color = Color.Lerp(warningColor, normalColor, t);
+        }
+        else
+        {
+            timeText.color = normalColor;
+        }
+    }
+
+    void ShowAddTime(float amount)
+    {
+        StopAllCoroutines();
+        StartCoroutine(AddTimePopup(amount));
+    }
+
+    IEnumerator AddTimePopup(float amount)
+    {
+        addTimeText.gameObject.SetActive(true);
+        addTimeText.text = "+" + amount.ToString("0.0") + "s";
+
+        Color c = addTimeText.color;
+        c.a = 1;
+        addTimeText.color = c;
+
+        float duration = 1f;
+        float time = 0;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            
+            addTimeText.transform.position = addTimeStartPos + Vector3.up * time * 30f;
+
+            
+            c.a = 1 - (time / duration);
+            addTimeText.color = c;
+
+            yield return null;
+        }
+
+        addTimeText.gameObject.SetActive(false);
+
+        
+        addTimeText.transform.position = addTimeStartPos;
+    }
+
 
 }
+
+
+
