@@ -164,5 +164,11 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "main",
+            "bindingGroup": "main",
+            "devices": []
+        }
+    ]
 }
