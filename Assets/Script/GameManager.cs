@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
                 
                     if (randomObs != 2)
                     {
-                        obs1 = Instantiate(Obstacles[randomObs], ObstaclesPos1.position, Quaternion.identity);
+                        obs1 = Instantiate(Obstacles[randomObs], ObstaclesPos1.position, Obstacles[randomObs].transform.rotation);
                         obs1.name = "Obstacle_1";
                     }
                     else
@@ -150,7 +150,7 @@ public class GameManager : MonoBehaviour
 
                 if (randomObs != 2)
                 {
-                    obs2 = Instantiate(Obstacles[randomObs], ObstaclesPos2.position, Quaternion.identity);
+                    obs2 = Instantiate(Obstacles[randomObs], ObstaclesPos2.position, Obstacles[randomObs].transform.rotation);
                     obs2.name = "Obstacle_2";
                 }
                 else 
@@ -186,7 +186,7 @@ public class GameManager : MonoBehaviour
 
                     if (randomObs != 2)
                     {
-                        obs3 = Instantiate(Obstacles[randomObs], ObstaclesPos3.position, Quaternion.identity);
+                        obs3 = Instantiate(Obstacles[randomObs], ObstaclesPos3.position, Obstacles[randomObs].transform.rotation);
                         obs3.name = "Obstacle_3";
                     }
                     else
