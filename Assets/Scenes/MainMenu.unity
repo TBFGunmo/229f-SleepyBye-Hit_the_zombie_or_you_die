@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &143666020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,12 +610,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Logo Game By Chat GPT
-
-    Music Mnvironment By Chat GPT
-
-    Sfx By Chat
-    GPT'
+  m_text: "Game Logo \u2014 ChatGPT\nEnvironment Music \u2014 ChatGPT\nSound Effects
+    \u2014 ChatGPT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -967,7 +963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.824053, y: 7}
+  m_AnchoredPosition: {x: -29.215237, y: 7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953953948
@@ -1948,7 +1944,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Lead Programmer - Game Design - Level Design - Game Engine & Core System
-    - System Arcitect - Physics Implementation - UX/UI Designer
+    - System Architect - Physics Implementation - UX/UI Designer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
