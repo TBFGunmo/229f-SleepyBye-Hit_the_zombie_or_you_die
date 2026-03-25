@@ -193,8 +193,8 @@ MonoBehaviour:
   zombiePos3: {fileID: 320555488}
   zombiePrefab: {fileID: 2341805138252666636, guid: 5e11ce414f6ba1644821325e01c9e169, type: 3}
   Obstacles:
-  - {fileID: 4626264229233982484, guid: f1b90ebbde9e99b4e82ecaaba756d24b, type: 3}
-  - {fileID: 2265827941911381171, guid: 7a3f97a10672e44488b8eefbbf337842, type: 3}
+  - {fileID: 7493196271727895009, guid: 91c988a8814eb9247bdf241fcae78c30, type: 3}
+  - {fileID: 1674461586750034949, guid: 7fd4afafac9dd9944900feaa7149bfd1, type: 3}
   ObstaclesPos1: {fileID: 1411828582}
   ObstaclesPos2: {fileID: 2099960446}
   ObstaclesPos3: {fileID: 1639020756}
