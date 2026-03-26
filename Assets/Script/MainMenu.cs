@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void OpenCredits()
     {
+        print("check");
         creditPanel.SetActive(true);
     }
 
