@@ -4352,7 +4352,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121594747}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 932febc65ba60ea44833420807f3078d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7397,8 +7397,8 @@ MonoBehaviour:
   - {fileID: 1854811882}
   - {fileID: 1219689200}
   - {fileID: 1746301748}
-  pushForce: 48.3
-  thrownForce: 2
+  pushForce: 20
+  thrownForce: 1.5
   heightThrown: 2
   kickForce: 55
   spinForce: 2.5

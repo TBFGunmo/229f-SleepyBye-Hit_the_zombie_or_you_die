@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
             }
 
-            Destroy(currentOBJ, 3);
+            Destroy(currentOBJ, 2);
 
         }
     }
