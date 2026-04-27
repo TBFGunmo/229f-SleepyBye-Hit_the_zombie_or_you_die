@@ -21,14 +21,16 @@ public class PlayerController : MonoBehaviour
     public Transform[] thrownPos;
     private int currentItem = 0;
 
-    public float pushForce = 10f;
+    public float pushAcc = 10f;
 
-    public float thrownForce = 10f;
+    public float thrownAcc = 10f;
     public float heightThrown = 2f;
 
     public float kickForce = 10f;
     public float spinForce = 10f;
     public float curveForce = 1.0f;
+
+
 
 
     public Transform[] zombieLanes;
@@ -64,6 +66,9 @@ public class PlayerController : MonoBehaviour
         print(item2);
         print(item3);
         */
+
+
+
     }
 
 
@@ -109,6 +114,9 @@ public class PlayerController : MonoBehaviour
 
             if (currentItem == 0)
             {
+
+                float pushForce = rigidbody.mass * pushAcc;
+
                 rigidbody.AddForce(pushForce * Vector3.forward, ForceMode.Impulse);
                 //print("yes1");
             }
@@ -118,6 +126,9 @@ public class PlayerController : MonoBehaviour
 
                 direction.y = heightThrown;
 
+                float thrownForce = rigidbody.mass * thrownAcc;
+
+
                 rigidbody.AddForce(direction * thrownForce, ForceMode.Impulse);
 
                 //print("yes2");
@@ -125,6 +136,7 @@ public class PlayerController : MonoBehaviour
             else if (currentItem == 2)
             {
                 //Vector3 direction = (zombieLanes[currentLane - 1].position - transform.position).normalized;
+
 
                 rigidbody.AddForce(new Vector3(-0.3f,0,1) * kickForce, ForceMode.Impulse);
                 rigidbody.AddTorque(Vector3.up * spinForce);

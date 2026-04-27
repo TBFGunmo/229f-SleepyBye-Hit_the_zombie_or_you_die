@@ -19,7 +19,7 @@ public class Zombie : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //print("111");
+        
         if (collision.gameObject.CompareTag("Item"))
         {
             Destroy(collision.gameObject);
@@ -28,7 +28,7 @@ public class Zombie : MonoBehaviour
 
             Destroy(gameObject);
 
-            //print("work");
+            
         }
     }
 }
